@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style> 
+h1,
+form {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="">
+<input type="text" placeholder="username" id="username"/>
+<input type="password" placeholder="password" id="password"/>
+<input type="button" value="login"id="tombol" />
+    </form>
+
+    <script>
+    const bntombol = document.querySelector("#tombol");
+     const txusername = document.querySelector("#username");
+     const txpassword = document.querySelector("#password");
+
+     bntombol.addEventListener("click", function(){
+       // console.log(username.value);
+       //  if(txusername.Value == "segara") {
+       // console.log("username anda benar");
+      // }
+     // if(C) {
+      //  console.log("password anda benar");
+    //  }
+    if(txusername.value == "segara" && txpassword.value == "Reforma51"){
+        window.location ="index.html";
+    }else{
+        //console.log("user dan password anda salah");
+        alert("username dan password salah. silahkan dicek kembali!!!");
+    }
+     });
+    </script>
+</body>
+</html>
